@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "b77aa0dc-90cd-4ddf-bde1-4f0d394d0d07",
+		"name": "laraveltask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33657788"
+	},
+	"item": [
+		{
+			"name": "get_products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/get-products/20"
+			},
+			"response": []
+		}
+	]
+}

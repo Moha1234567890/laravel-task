@@ -24,3 +24,8 @@
 
 4-change the db name in the .env file and create a new app in your gmail to use the mail service 
 
+
+5-Laravel collection file is in the Laravel-Collection-Folder
+
+
+6-you need to sign up to a mailtrap account to get verify your emails
