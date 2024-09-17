@@ -18,6 +18,8 @@ class ProductSeeder extends Seeder
             "image" => "img1.png",
             "details" => "details 1",
             "price" => "20",
+            "category_id" => 1,
+
         ]);
 
         Product::create([
@@ -26,6 +28,7 @@ class ProductSeeder extends Seeder
             "image" => "img2.png",
             "details" => "details 1",
             "price" => "30",
+            "category_id" => 1,
         ]);
     }
 }
