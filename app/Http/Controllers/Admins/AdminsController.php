@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use File;
+use Auth;
 class AdminsController extends Controller
 {
     
@@ -163,6 +164,17 @@ class AdminsController extends Controller
             return redirect('admin/all-products/')->with('delete', 'product deleted successfully');
 
         }
+    }
+
+
+
+    public function adminLogout(Request $request)
+    {
+        Auth::guard('admin')->logout();
+
+        $request->session()->invalidate();
+
+        return redirect('admin/login/');
     }
     
 }

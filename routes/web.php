@@ -26,7 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Route::group('admin')
 Route::get( '/admin/login', [App\Http\Controllers\Admins\AdminsController::class, 'viewLogin'])->name('view.login')->middleware("check.for.login");
 
-Route::post( '/admin/login', [App\Http\Controllers\Admins\AdminsController::class, 'checkLogin'])->name('check.login');
+Route::post( '/admin/login', [App\Http\Controllers\Admins\AdminsController::class, 'checkLogin'])->name('check.login')->middleware("check.for.login");
 
 
 Route::post( '/products/search', [App\Http\Controllers\HomeController::class, 'search'])->name('products.search');
@@ -51,3 +51,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 
    
 });
+
+Route::post( '/admin-logout', [App\Http\Controllers\Admins\AdminsController::class, 'adminLogout'])->name('admin.logout');
