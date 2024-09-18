@@ -31,6 +31,9 @@
              
             </form>
 
+            email: email.admin@gmial.com
+            password: email.admin@gmial.com
+
         </div>
    </div>
 
